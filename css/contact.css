@@ -1,0 +1,148 @@
+body {
+    font-family: Gliker, serif;
+
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("../police/Montserrat-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Gliker";
+    src: url("../police/Gliker-Black.ttf") format("truetype");
+}
+h1 span {
+    font-family: "Gliker", cursive;
+    text-shadow: 2px 2px 4px #000000;
+}
+span {
+    text-shadow: 0 1px 2px rgba(0,0,0,.65);
+}
+form {
+    width: 100%;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    color: #0D3D38;
+}
+@media screen and (min-width: 576px) {
+    form   {
+        width: 60%
+    }
+}
+
+form h2 {
+    font-size: 30px;
+    text-align: center;
+}
+form .input-box {
+    margin-top: 20px;
+}
+.input-box .field {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    padding: 15px;
+    font-size: 16px;
+    color: #0D3D38;
+    margin-top: 8px;
+}
+.input-box label {
+    font-weight: bold;
+}
+.input-box .field.mess {
+    height: 200px;
+    resize: none;
+}
+form button {
+    width: 100%;
+    height: 55px;
+    background: #0D3D38;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    margin-top: 25px;
+    transition: transform 0.5s ease;
+}
+form button:hover {
+    transform: translateY(5px);
+}
+hr {
+    color: black;
+}
+.subtitle2 {
+    margin-left: 20px;
+    font-weight: bold;
+    color: #0D3D38;
+}
+.subtitle2 {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 1px;
+    text-decoration: none;
+    position: relative;
+}
+.subtitle2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background-color: #0D3D38;
+    transition: all ease .25s;
+}
+.subtitle2:hover::after {
+    width: 100%;
+}
+#networks {
+    cursor: default;
+}
+#networks a {
+    color: #0D3D38;
+    font-weight: bold;
+}
+#networks a:hover .fab, #networks a span {
+    transition: transform 0.5s ease;
+}
+#networks a:hover .fab, #networks a:hover span {
+   transform: translateX(5px);
+}
+#networks span {
+    cursor: pointer;
+}
+#btn-cv {
+    border: none;
+    border-radius: 20px;
+    background-color: #0D3D38;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    margin-top: 25px;
+    transition: transform 0.5s ease;
+}
+#btn-cv:hover {
+    transform: translateY(5px);
+}
+#btn-cv span {
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+#btn-cv i {
+    color: white;
+}
+#back {
+    color: #0D3D38;
+    scale: 2;
+    text-shadow: 0 1px 2px rgba(0,0,0,.65);
+
+}
+#back:hover {
+    color: white;
+}
