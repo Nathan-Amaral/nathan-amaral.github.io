@@ -114,6 +114,12 @@ hr {
 #networks a:hover .fab, #networks a:hover span {
    transform: translateX(5px);
 }
+#networks a:hover .fab, #networks a i {
+    transition: transform 0.5s ease;
+}
+#networks a:hover .fab, #networks a:hover i {
+   transform: translateX(5px);
+}
 #networks span {
     cursor: pointer;
 }
