@@ -71,9 +71,19 @@ p {
 .mt-20 {
     margin-top: 12rem;
 }
-#img-me {
+#img-me {     
     mix-blend-mode: darken;
+    justify-self: center;
+    background: linear-gradient(135deg, #0D3D38, #2A7367, #A3C9C6);
+    mask-image: linear-gradient(to bottom, 
+                hsla(0, 0%, 50%, 1) 70%,
+                transparent 100%);
+    border-top-left-radius: 40%;
+    border-top-right-radius: 80%;
+
 }
+
+
 @media screen and (min-width: 576px) {
     p   {
         font-size: 2em;
