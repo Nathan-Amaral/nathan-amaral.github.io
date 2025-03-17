@@ -1,4 +1,4 @@
-let selection = Splitting()
+/* let selection = Splitting()
 gsap.registerPlugin(ScrollTrigger)
 
 gsap.from(selection[0].chars, {
@@ -40,4 +40,4 @@ gsap.ticker.add((time) => {
   lenis.raf(time * 600); // Convert time from seconds to milliseconds
 });
 
-gsap.ticker.lagSmoothing(0);
+gsap.ticker.lagSmoothing(0); */
