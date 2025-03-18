@@ -144,8 +144,7 @@ p {
     position: absolute;
     scale: 1.5;
     top: 55px;
-    right: -30px;
-    width: 60px;
+    transform: translateX(230px);
     color: #0D3D38;
     text-shadow: 2px 2px 4px #000000;
 }
