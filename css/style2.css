@@ -1,3 +1,7 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 body {
     position: relative;
     width: 100%;
@@ -5,6 +9,7 @@ body {
     background-color: #F3FBF9;
     color: #0D3D38;
     font-family: Montserrat, serif;
+    overflow-x: hidden;
 }
 footer {
     font-family: "Gliker",serif;
