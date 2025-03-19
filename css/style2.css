@@ -13,6 +13,10 @@ body {
 }
 footer {
     font-family: "Gliker",serif;
+    background-color: #0D3D38;
+    color: #F3FBF9;
+    border-top-left-radius: 74%;
+    border-top-right-radius: 74%;
 }
 @media screen and (min-width: 992px) {
     .circle {
