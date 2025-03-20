@@ -1,7 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-}
 body {
     position: relative;
     width: 100%;
@@ -13,6 +9,10 @@ body {
 }
 footer {
     font-family: "Gliker",serif;
+    background-color: #0D3D38;
+    color: #F3FBF9;
+    border-top-left-radius: 74%;
+    border-top-right-radius: 74%;
 }
 @media screen and (min-width: 992px) {
     .circle {
@@ -144,7 +144,8 @@ p {
     position: absolute;
     scale: 1.5;
     top: 55px;
-    transform: translateX(230px);
+    right: -30px;
+    width: 60px;
     color: #0D3D38;
     text-shadow: 2px 2px 4px #000000;
 }
