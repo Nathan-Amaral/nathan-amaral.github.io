@@ -67,3 +67,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+// elephant
+
+document.querySelector('.elephant').addEventListener('click', function() {
+    const audio = document.getElementById('elephant-sound');
+    audio.play();
+});
+
+
