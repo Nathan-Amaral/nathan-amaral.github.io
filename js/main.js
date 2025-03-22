@@ -75,3 +75,10 @@ document.querySelector('.elephant').addEventListener('click', function() {
 });
 
 
+// oiseau
+
+document.querySelector('.oiseau').addEventListener('click', function() {
+    const audio = document.getElementById('oiseau-sound');
+    audio.play();
+});
+

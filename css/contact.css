@@ -1,6 +1,14 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    overflow-x: hidden;
+}
 body {
     font-family: Gliker, serif;
-
+    overflow-x: hidden;
 }
 @font-face {
     font-family: "Montserrat";
@@ -142,9 +150,6 @@ hr {
 }
 #btn-cv i {
     color: white;
-}
-.animals {
-    scale: 2;
 }
 #back {
     color: #F3FBF9;
