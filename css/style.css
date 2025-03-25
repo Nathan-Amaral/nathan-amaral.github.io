@@ -61,6 +61,9 @@ h1 {
 p {
     font-size: 3em;
 }
+a {
+    text-decoration: none;
+}
 .navbar {
     position: relative;
     padding: 20px;
@@ -160,19 +163,20 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(63,85,105,0.7);
+    background: rgba(63,85,105,0.5);
     color: white;
     font-size: 3.125em;
-    width: 2.5em;
-    height: 2.5em;
+    width: 2em;
+    height: 2em;
     border-radius: 100%;
     position: relative;
     z-index: 2;
 }
 .play-btn:hover {
     background: rgba(63,85,105,0.9);
+    color: white;
 }
-.play-btn::before {
+/* .play-btn::before {
     content: '';
     position: absolute;
     border: 5px solid white;
@@ -185,8 +189,8 @@ p {
     opacity: 0;
     z-index: 1; 
     animation-delay: 0.4s;
-}
-.play-btn::after {
+} */
+/* .play-btn::after {
     content: '';
     position: absolute;
     border: 5px solid white;
@@ -227,3 +231,4 @@ p {
          transform: scale(1.2);
     }
 }
+ */
