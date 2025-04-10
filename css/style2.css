@@ -94,8 +94,6 @@ p {
     border-top-right-radius: 80%;
 
 }
-
-
 @media screen and (min-width: 576px) {
     p   {
         font-size: 2em;
@@ -182,7 +180,6 @@ p {
         align-items: center;
         margin-left: -100%;
         transition: all 0.5s ease;
-
     }
     .nav-links.mobile-menu {
         margin-left: 0;
@@ -196,6 +193,29 @@ p {
         margin: 15px 0;
         font-size: 1.5em;
     }
+}
+.play-audio-btn {
+    padding: 10px 15px;
+    border-radius: 10px;
+    right: 2rem;
+    background-color: #367c70;
+    color: white;
+    border-bottom: 5px solid#0D3D38;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+    float: left;
+    position: fixed;
+    top: 85vh;
+}
+.play-audio-btn {
+    i {
+        color: white;
+    }
+}
+.play-audio-btn:active {
+    transform: translate(0, 5px);
+    -webkit-transform: translate(0, 5px);
+    border-bottom: 1px;
 }
 #Presentation h1 {
     z-index: -100;
@@ -392,6 +412,7 @@ i {
     overflow: hidden;
     margin: 20px;
     transition: all 0.7s;
+    border: none;
 }
 .card:hover {
     scale: 1.1;

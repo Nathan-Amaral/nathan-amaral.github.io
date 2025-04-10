@@ -67,6 +67,31 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+// play animation
+
+document.addEventListener('DOMContentLoaded', function () {
+    const audioUrl = 'sons/jungle.mp3';
+    const audio = new Audio(audioUrl);
+    audio.loop = true;
+
+    document.querySelector('.play-audio-btn').addEventListener('click', function () {
+        const body = document.body;
+
+        if (audio.paused) {
+            audio.play().catch(error => {
+                console.error("Erreur lors de la lecture de l'audio : ", error);
+            });
+            body.style.backgroundColor = '#85FFBD';
+            body.style.backgroundImage = 'linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%)';
+        } else {
+            audio.pause();
+            body.style.backgroundColor = '';
+            body.style.backgroundImage = '';
+        }
+    });
+});
+
+
 // elephant
 
 document.querySelector('.elephant').addEventListener('click', function() {
