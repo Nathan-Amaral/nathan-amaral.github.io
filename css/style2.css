@@ -140,6 +140,7 @@ p {
 }
 .navbar .nav-links ul {
     display: flex;
+    margin: 0;
 }
 .navbar .nav-links ul li {
     margin: 0 25px;
