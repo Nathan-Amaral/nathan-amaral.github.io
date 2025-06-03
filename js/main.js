@@ -91,6 +91,30 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// play animation 2
+
+document.addEventListener('DOMContentLoaded', function () {
+    const audioUrl = 'sons/relaxing-ocean-waves.mp3';
+    const audio = new Audio(audioUrl);
+    audio.loop = true;
+
+    document.querySelector('.play-audio-btn2').addEventListener('click', function () {
+        const body = document.body;
+
+        if (audio.paused) {
+            audio.play().catch(error => {
+                console.error("Erreur lors de la lecture de l'audio : ", error);
+            });
+            body.style.backgroundColor = '#48c6ef';
+            body.style.backgroundImage = 'linear-gradient(to right, #f9d423 0%, #ff4e50 100%)';
+        } else {
+            audio.pause();
+            body.style.backgroundColor = '';
+            body.style.backgroundImage = '';
+        }
+    });
+});
+
 
 // elephant
 

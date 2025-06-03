@@ -220,6 +220,30 @@ p {
     border-bottom: 1px;
 }
 
+.play-audio-btn2 {
+    padding: 10px 15px;
+    border-radius: 10px;
+    right: 2rem;
+    background-color: #0D74CE;
+    color: white;
+    border-bottom: 5px solid#113264;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+    float: left;
+    position: fixed;
+    top: 79vh;
+}
+.play-audio-btn2 {
+    i {
+        color: white;
+    }
+}
+.play-audio-btn2:active {
+    transform: translate(0, 5px);
+    -webkit-transform: translate(0, 5px);
+    border-bottom: 1px;
+}
+
 #Presentation h1 {
     z-index: -100;
     position: relative;
