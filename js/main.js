@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.error("Erreur lors de la lecture de l'audio : ", error);
             });
             body.style.backgroundColor = '#48c6ef';
-            body.style.backgroundImage = 'linear-gradient(to right, #f9d423 0%, #ff4e50 100%)';
+            body.style.backgroundImage = 'linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%)';
         } else {
             audio.pause();
             body.style.backgroundColor = '';
