@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // play animation 2
 
 document.addEventListener('DOMContentLoaded', function () {
-    const audioUrl = 'sons/relaxing-ocean-waves.mp3';
+    const audioUrl = 'sons/ocean-waves.mp3';
     const audio = new Audio(audioUrl);
     audio.loop = true;
 
