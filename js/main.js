@@ -131,3 +131,31 @@ document.querySelector('.oiseau').addEventListener('click', function() {
     audio.play();
 });
 
+
+// saison
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  function emojiSaison(saison) {
+    switch (saison.toLowerCase()) {
+      case 'printemps': return '🌸';
+      case 'été': return '☀️';
+      case 'automne': return '🍂';
+      case 'hiver': return '❄️';
+      default: return '';
+    }
+  }
+
+  function obtenirSaisonActuelle() {
+    const mois = new Date().getMonth();
+    if (mois >= 2 && mois <= 4) return 'printemps';
+    if (mois >= 5 && mois <= 7) return 'été';
+    if (mois >= 8 && mois <= 10) return 'automne';
+    return 'hiver';
+  }
+
+  const spanEmoji = document.querySelector('.season');
+  const saisonActuelle = obtenirSaisonActuelle();
+  spanEmoji.textContent = emojiSaison(saisonActuelle);
+
+});
