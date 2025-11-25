@@ -244,12 +244,9 @@ p {
     border-bottom: 1px;
 }
 
-#Presentation h1 {
-    z-index: -100;
-    position: relative;
-}
+#Presentation h1,
 #Presentation .row {
-    z-index: -100;
+    z-index: 1;
     position: relative;
 }
 #Presentation p {
