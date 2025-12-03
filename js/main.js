@@ -136,23 +136,24 @@ document.querySelector('.oiseau').addEventListener('click', function() {
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  function emojiSaison(saison) {
-    switch (saison.toLowerCase()) {
-      case 'printemps': return '🌸';
-      case 'été': return '☀️';
-      case 'automne': return '🍂';
-      case 'hiver': return '❄️';
-      default: return '';
+    function emojiSaison(saison) {
+        switch (saison.toLowerCase()) {
+            case 'printemps': return '🌸';
+            case 'été': return '☀️';
+            case 'automne': return '🍂';
+            case 'hiver': return '❄️';
+            default: return '';
+        }
     }
-  }
 
-  function obtenirSaisonActuelle() {
-    const mois = new Date().getMonth();
-    if (mois >= 2 && mois <= 4) return 'printemps';
-    if (mois >= 5 && mois <= 7) return 'été';
-    if (mois >= 8 && mois <= 10) return 'automne';
-    return 'hiver';
-  }
+    function obtenirSaisonActuelle() {
+        const mois = new Date().getMonth();
+        const jour = new Date().getDate();
+            if ((mois >= 3 && mois <= 6) && jour <= 19) return 'printemps';
+            if ((mois >= 6 && mois <= 9) && jour <= 20) return 'été';
+            if ((mois >= 9 && mois <= 12) && jour <= 19) return 'automne';
+            return 'hiver';
+    }
 
   const spanEmoji = document.querySelector('.season');
   const saisonActuelle = obtenirSaisonActuelle();
